@@ -4,9 +4,9 @@ from pathlib import Path
 import streamlit as st
 from file_processor import procesar  # adapta a tu función
 
-st.title("Procesador de archivos .sgi")
+st.title("Procesador de archivos .sgy")
 
-archivo = st.file_uploader("Sube tu archivo .sgi", type=["sgi"])
+archivo = st.file_uploader("Sube tu archivo .sgy", type=["sgy", "segy"])
 
 if archivo and st.button("Procesar"):
     with tempfile.TemporaryDirectory() as tmp:
